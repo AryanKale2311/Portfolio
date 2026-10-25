@@ -1,13 +1,131 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080a12">
+  <meta name="description" content="Aryan Kale — Computer Science Engineering student, developer, and technology project builder.">
+  <title>Aryan Kale | Computer Science Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>My Website Is Online!</h1>
-    <p>GitHub Pages hosting is working.</p>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Aryan Kale home"><span class="brand-mark">AK</span><span>ARYAN<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" id="navMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-cta">Let's connect <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE & ENGINEERING <span class="eyebrow-line"></span></p>
+        <h1>Ideas into<br><span class="gradient-text">intelligent</span><br>experiences<span class="hero-period">.</span></h1>
+        <p class="hero-description">I'm <strong>Aryan Kale</strong> — a Computer Science Engineering student who enjoys building useful technology, exploring AI tools, and turning ambitious ideas into working prototypes.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-quiet" href="#contact">Get in touch <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><i></i> B.Tech CSE · Class of 2029</span>
+          <span class="meta-separator">/</span>
+          <span>Curious by design. Building by doing.</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-label="Abstract futuristic portfolio graphic">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="orbit-node node-one"></div><div class="orbit-node node-two"></div><div class="orbit-node node-three"></div>
+        <div class="core-card">
+          <div class="core-top"><span class="core-label">PERSONAL SYSTEM</span><span class="core-live"><i></i> ONLINE</span></div>
+          <div class="core-monogram">A<span>K</span></div>
+          <div class="core-rule"></div>
+          <div class="core-bottom"><span>DESIGN THINKING</span><span>BUILD / LEARN / REPEAT</span></div>
+        </div>
+        <div class="float-tag tag-top"><span class="tag-icon">⌘</span> PROBLEM SOLVING</div>
+        <div class="float-tag tag-bottom"><span class="tag-icon">✳</span> CREATIVE TECHNOLOGY</div>
+        <div class="visual-caption">FIG. 01 — THE BUILDER'S MINDSET</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / THE PERSON BEHIND THE CODE</p><h2>More than just<br><span class="muted-heading">lines of code.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-main reveal">
+          <p class="large-copy">I like technology that solves real problems — especially when software, creativity, and practical thinking meet.</p>
+          <p>I'm pursuing a B.Tech in Computer Science and Engineering at MIT-ADT University. My interests span software development, AI-powered tools, data structures, and early-stage product ideas. I enjoy taking a concept from a rough sketch to a prototype people can actually explore.</p>
+          <p>I'm still learning, experimenting, and improving with every project. My goal is to keep building strong fundamentals while contributing to meaningful teams and products.</p>
+        </div>
+        <div class="about-side reveal">
+          <div class="stat-card"><span class="stat-number">8.95</span><span class="stat-label">FIRST-YEAR CGPA</span><span class="stat-note">Academic foundation</span></div>
+          <div class="stat-card stat-card-accent"><span class="stat-number">2029</span><span class="stat-label">GRADUATION TARGET</span><span class="stat-note">B.Tech · CSE</span></div>
+          <div class="quote-card"><span class="quote-mark">“</span><p>Stay curious. Build useful things. Get better every iteration.</p><span class="quote-caption">A PERSONAL PRINCIPLE</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap skills-section" id="skills">
+      <div class="section-heading reveal"><p class="eyebrow">02 / TOOLKIT</p><h2>Skills I'm building<br><span class="muted-heading">and putting to work.</span></h2></div>
+      <div class="skills-layout">
+        <div class="skill-intro reveal"><p>My toolkit is evolving. These are the areas I've worked with in coursework, prototypes, and creative projects.</p><span class="tiny-note">CURRENT FOCUS → STRONGER FUNDAMENTALS</span></div>
+        <div class="skill-groups">
+          <article class="skill-group reveal"><div class="skill-group-head"><span class="skill-index">01</span><h3>Programming & CS</h3><span class="skill-symbol">⌘</span></div><div class="skill-chips"><span>Python</span><span>Data Structures & Algorithms</span><span>Problem Solving</span><span>OOP Fundamentals</span><span>MySQL · Basic</span></div></article>
+          <article class="skill-group reveal"><div class="skill-group-head"><span class="skill-index">02</span><h3>Web & Product</h3><span class="skill-symbol">↗</span></div><div class="skill-chips"><span>HTML & CSS</span><span>JavaScript Fundamentals</span><span>Chrome Extension Concepts</span><span>UI Prototyping</span><span>Vibe Coding</span></div></article>
+          <article class="skill-group reveal"><div class="skill-group-head"><span class="skill-index">03</span><h3>Creative Technology</h3><span class="skill-symbol">✳</span></div><div class="skill-chips"><span>AI Image Generation</span><span>AI Video Generation</span><span>Project Ideation</span><span>Presentation Design</span><span>Public Speaking</span></div></article>
+        </div>
+      </div>
+      <p class="skills-footnote">Skill levels are intentionally not overstated; this portfolio reflects a student who is actively learning and building.</p>
+    </section>
+
+    <section class="section-wrap projects-section" id="projects">
+      <div class="section-heading section-heading-row reveal"><div><p class="eyebrow">03 / SELECTED WORK</p><h2>Ideas with a<br><span class="muted-heading">purpose.</span></h2></div><p class="heading-side-note">College projects, prototypes, and concepts shaped around real-world problems.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-art art-sudarshan"><div class="art-topline"><span>01 / DISASTER RESILIENCE</span><span class="art-status">CONCEPT / UI PROTOTYPE</span></div><div class="terrain-grid"></div><div class="radar-ring radar-a"></div><div class="radar-ring radar-b"></div><div class="radar-point"></div><div class="art-word">S.</div><div class="art-footer"><span>RISK INTELLIGENCE</span><span>↗</span></div></div>
+          <div class="project-content"><div class="project-tags"><span>SIH CONCEPT</span><span>IoT · DATA · SAFETY</span></div><h3>SUDARSHAN</h3><p>A flash-flood risk and response concept for hilly regions, combining sensor signals, weather and terrain data, village-level risk mapping, evacuation routes, and drone-assisted assessment.</p><div class="project-bottom"><span>Disaster preparedness</span><span class="project-arrow">↗</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art art-nexora"><div class="art-topline"><span>02 / SMART CAMPUS</span><span class="art-status">ONGOING PROTOTYPE</span></div><div class="band-device"><div class="band-screen"><span>●</span><b>N</b><small>SAFE / CONNECTED</small></div><div class="band-strap"></div></div><div class="art-glow"></div><div class="art-footer"><span>STUDENT SAFETY</span><span>↗</span></div></div>
+          <div class="project-content"><div class="project-tags"><span>IDEASPARK</span><span>PROTOTYPE</span></div><h3>NEXORA</h3><p>A smart student band concept focused on attendance tracking and student safety. The project received second prize at IdeaSpark and has an ongoing prototype.</p><div class="project-bottom"><span>Second prize · IdeaSpark</span><span class="project-arrow">↗</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art art-tivarix"><div class="art-topline"><span>03 / LEARNING EXPERIENCE</span><span class="art-status">WORKING PROTOTYPE</span></div><div class="browser-mock"><div class="browser-dots"><i></i><i></i><i></i></div><div class="browser-content"><div class="browser-video"></div><div class="browser-panel"><span>STUCK ON THIS?</span><b>Ask your doubt.</b><div class="browser-button">Explain this moment ↗</div></div></div></div><div class="art-footer"><span>LEARNING WITHOUT CONTEXT SWITCHING</span><span>↗</span></div></div>
+          <div class="project-content"><div class="project-tags"><span>CHROME EXTENSION</span><span>EDTECH</span></div><h3>TIVARIX</h3><p>A learning-tool concept for asking questions at a specific point in a YouTube lecture without switching tabs. The prototype explored timestamp-based doubts and contextual explanations.</p><div class="project-bottom"><span>Student learning tool</span><span class="project-arrow">↗</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art art-cabin"><div class="art-topline"><span>04 / ACOUSTIC DESIGN</span><span class="art-status">COLLEGE PROJECT</span></div><div class="sound-wave wave-one"></div><div class="sound-wave wave-two"></div><div class="cabin-illustration"><div class="cabin-roof"></div><div class="cabin-body"><div class="cabin-window"></div><div class="cabin-door"></div></div><div class="cabin-base"></div></div><div class="art-footer"><span>NOISE REDUCTION</span><span>↗</span></div></div>
+          <div class="project-content"><div class="project-tags"><span>ENGINEERING DESIGN</span><span>RESEARCH</span></div><h3>NOISE REDUCTION CABIN</h3><p>A college project exploring a cabin concept designed to reduce surrounding noise and create a more focused environment.</p><div class="project-bottom"><span>Engineering concept</span><span class="project-arrow">↗</span></div></div>
+        </article>
+      </div>
+      <p class="project-disclaimer">Project descriptions summarize concepts and prototype work; they do not imply a production-ready deployment.</p>
+    </section>
+
+    <section class="section-wrap education-section" id="education">
+      <div class="section-heading reveal"><p class="eyebrow">04 / THE FOUNDATION</p><h2>Learning is the<br><span class="muted-heading">long game.</span></h2></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-date">2025 — 2029</div><div class="timeline-marker"></div><div class="timeline-content"><span class="timeline-label">CURRENT · UNDERGRADUATE</span><h3>B.Tech — Computer Science & Engineering</h3><p>MIT-ADT University</p><div class="timeline-detail"><span>Second-year student</span><span>First-year CGPA: <strong>8.95 / 10</strong></span></div></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">PROJECT MILESTONE</div><div class="timeline-marker"></div><div class="timeline-content"><span class="timeline-label">RECOGNITION</span><h3>Second Prize — IdeaSpark</h3><p>Recognition for the Nexora smart student band project concept.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-date">COMMUNITY</div><div class="timeline-marker"></div><div class="timeline-content"><span class="timeline-label">STUDENT ENGAGEMENT</span><h3>Microsoft Learn Student Community</h3><p>Contributed to community promotion, event scripting, and public-speaking activities.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section-wrap contact-section" id="contact">
+      <div class="contact-panel reveal"><div class="contact-orb"></div><p class="eyebrow">05 / OPEN TO OPPORTUNITIES</p><h2>Let's build<br><span class="gradient-text">something useful.</span></h2><p class="contact-copy">Interested in software, AI-powered products, student projects, or collaborating on a thoughtful idea? I'd be glad to connect.</p><div class="contact-actions"><a class="button button-primary" id="emailLink" href="mailto:YOUR_EMAIL@example.com">Email me <span>↗</span></a><a class="button button-quiet" href="https://github.com/AryanKale2311" target="_blank" rel="noreferrer">GitHub profile <span>↗</span></a><a class="button button-quiet" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div><p class="contact-note">Before publishing, replace the placeholder email and LinkedIn link with your real details.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">AK</span><span>ARYAN<span class="brand-dot">.</span></span></a><p>Designed with curiosity. Built one iteration at a time.</p><a class="back-top" href="#home">BACK TO TOP ↑</a><span class="footer-year">© <span id="year"></span> ARYAN KALE</span></footer>
 </body>
 </html>
