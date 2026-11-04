@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080a12">
+  <meta name="description" content="PennyWise — a personal finance project by Aryan Kale, developed as an Android app and a web application.">
+  <title>PennyWise | Aryan Kale Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="detail-page">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Aryan Kale home"><span class="brand-mark">AK</span><span>ARYAN<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" id="navMenu">
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#education">Education</a>
+      <a href="index.html#contact" class="nav-cta">Let's connect <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detail-hero section-wrap">
+      <div class="reveal">
+        <a class="detail-back" href="index.html#projects">← BACK TO PORTFOLIO PROJECTS</a>
+        <p class="eyebrow"><span class="status-dot"></span> PERSONAL FINANCE · INDEPENDENT PROJECT</p>
+        <h1><span class="gradient-text">PennyWise</span><span class="hero-period">.</span></h1>
+        <p class="detail-lead">A personal finance and expense-management project built across two platforms: a responsive web experience and a native Android application. The goal is to make everyday budgeting easier to understand, organize, and maintain.</p>
+        <div class="detail-meta"><span>ANDROID · KOTLIN</span><span>JETPACK COMPOSE</span><span>WEB · HTML / CSS / JS</span><span>ROOM DATABASE</span></div>
+      </div>
+      <div class="detail-visual reveal" aria-label="Illustration of the PennyWise finance dashboard">
+        <div class="detail-screen">
+          <div class="detail-screen-top"><span>PENNYWISE / OVERVIEW</span><span>PERSONAL FINANCE</span></div>
+          <div class="detail-screen-balance">MONTHLY SPENDING</div>
+          <div class="detail-screen-amount">Your money. In focus.</div>
+          <div class="detail-screen-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="detail-screen-foot"><span>TRACK</span><span>ANALYZE</span><span>PLAN</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-wrap">
+        <div class="detail-section-heading reveal">
+          <p class="eyebrow">01 / PROJECT OVERVIEW</p>
+          <h2>Turning everyday spending into clearer decisions.</h2>
+          <p>PennyWise is being developed as a practical tool for recording expenses, understanding spending patterns, and working within a monthly budget. Building both a website and an Android app has helped explore how the same product idea can be implemented across different platforms.</p>
+        </div>
+        <div class="detail-two-col">
+          <article class="detail-info-card reveal"><span class="detail-number">01 — THE WEB EXPERIENCE</span><h3>A browser-based finance dashboard</h3><p>The web version uses HTML, CSS, and JavaScript. It includes a dashboard, transaction management, category-based analytics, budgets, multi-currency entries, CSV export, and browser-based persistence using localStorage. The website is published through GitHub Pages.</p></article>
+          <article class="detail-info-card reveal"><span class="detail-number">02 — THE ANDROID APP</span><h3>A native mobile application</h3><p>The Android version is being built in Android Studio using Kotlin and Jetpack Compose. It uses Room for local data storage and starts with a personalized onboarding flow so each installation can be set up with the user's own details and budget.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-wrap">
+        <div class="detail-section-heading reveal">
+          <p class="eyebrow">02 / CORE CAPABILITIES</p>
+          <h2>Designed around a user's budget cycle.</h2>
+          <p>The project has moved beyond a static interface into working application flows and local data handling. Current functionality and implementation differ slightly between the web and Android versions.</p>
+        </div>
+        <div class="detail-feature-list">
+          <article class="detail-feature reveal"><span class="feature-index">FEATURE 01</span><h3>Personalized onboarding</h3><p>New users enter their own profile information and monthly budget before reaching the dashboard.</p></article>
+          <article class="detail-feature reveal"><span class="feature-index">FEATURE 02</span><h3>Expense organization</h3><p>Record and organize transactions to build a clearer picture of day-to-day spending.</p></article>
+          <article class="detail-feature reveal"><span class="feature-index">FEATURE 03</span><h3>Custom budget cycle</h3><p>Choose a monthly reset day from 1 to 31, rather than being restricted to a calendar-month start.</p></article>
+          <article class="detail-feature reveal"><span class="feature-index">FEATURE 04</span><h3>Automatic and manual rollover</h3><p>The app checks for a new cycle when opened, and also provides a manual reset option.</p></article>
+          <article class="detail-feature reveal"><span class="feature-index">FEATURE 05</span><h3>Financial history</h3><p>Previous cycle transactions can be archived so a new cycle can begin without losing the older records.</p></article>
+          <article class="detail-feature reveal"><span class="feature-index">FEATURE 06</span><h3>Unused budget preference</h3><p>Choose whether unused budget should carry forward or the next cycle should begin with the original budget amount.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="section-wrap">
+        <div class="detail-section-heading reveal">
+          <p class="eyebrow">03 / TECHNOLOGY & LEARNING</p>
+          <h2>Learning by building across platforms.</h2>
+          <p>Developing PennyWise has involved working through the complete development workflow: designing interfaces, structuring app screens, configuring Android dependencies, handling local persistence, troubleshooting Gradle builds, and publishing a static website through GitHub Pages.</p>
+        </div>
+        <div class="detail-stack reveal">
+          <span>Kotlin</span><span>Jetpack Compose</span><span>Android Studio</span><span>Room</span><span>Gradle</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>localStorage</span><span>Chart.js</span><span>Git</span><span>GitHub Pages</span>
+        </div>
+        <div class="detail-note reveal">The Android and web versions currently store data separately on the device/browser. They do not automatically synchronize with each other or through a cloud account. PennyWise is an evolving personal project, and features may continue to change as development progresses.</div>
+      </div>
+    </section>
+
+    <section class="section-wrap">
+      <div class="detail-cta reveal">
+        <p class="eyebrow" style="justify-content:center">04 / EXPLORE THE PROJECT</p>
+        <h2>Take a closer look at <span class="gradient-text">PennyWise.</span></h2>
+        <p>Visit the live web version or explore the source repository to see how the project is taking shape.</p>
+        <div class="detail-cta-actions">
+          <a class="button button-primary" href="https://aryankale2311.github.io/PennyWise/" target="_blank" rel="noreferrer">Open PennyWise website <span>↗</span></a>
+          <a class="button button-quiet" href="https://github.com/AryanKale2311/PennyWise" target="_blank" rel="noreferrer">View GitHub repository <span>↗</span></a>
+          <a class="button button-quiet" href="index.html#projects">Back to portfolio <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer detail-footer">
+    <a class="brand footer-brand" href="index.html#home"><span class="brand-mark">AK</span><span>ARYAN<span class="brand-dot">.</span></span></a>
+    <p>Designed with curiosity. Built one iteration at a time.</p>
+    <a class="back-top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">BACK TO TOP ↑</a>
+    <span class="footer-year">© <span id="year"></span> ARYAN KALE</span>
+  </footer>
+</body>
+</html>
